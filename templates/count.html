@@ -1,0 +1,14 @@
+
+
+<h1>this is count page</h1>
+<p>There are {{count}} words in your text</p><br>
+<button onclick="window.location.href='/'">Start Over</button>
+<h1>Original Text : </h1>
+<p>{{ft}}</p>
+
+<h1>Words : </h1>
+{% for word, countWord in wdict %}
+<p>
+    {{word}}:{{countWord}}<br>
+</p>
+{% endfor %}
